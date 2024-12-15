@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Desoky</title>
+
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            background-color: cornsilk;            
+            min-height: 100vh; /* Ensure body covers the entire viewport */
+            font-family: 'Arial', sans-serif;           
+        }
+
+        main {
+            display: flex;
+            flex: 1; /* Allow main to take remaining space */
+            flex-direction: column; /* Stack elements vertically */
+            background-color: navy;
+            color: cornsilk;                     
+            /* overflow: auto; */
+        }
+
+
+        table {
+            margin-top: 50px; /* Center content vertically */
+        }
+
+        section {
+            display: flex; /* Turn section into a flex container */
+            flex: 1; /* Allow section to take remaining space */
+            flex-direction: column; /* Stack section content */
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Align text in the center */
+        }
+
+                
+        h1,h2,h3 {
+            margin: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>Desoky Capital</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">GitHub Portfolio</a></li>
+                <li><a href="real-estate.html">Real Estate</a></li>
+                <li><a href="investment-products.html">Investment Products</a></li>
+                <li><a href="venture-capital.html">Venture Capital</a></li>
+                <li><a href="literary-works.html">Literary Works</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <table>
+                <tr>
+                    <td>                    
+                            <h2>Developer, Financier, Academic</h2>
+                            <p>Current educator and investor with extensive academic, corporate and military experience surrounding engineering, finance, economics and leadership. 
+                                Specialties: software development, industrial engineering, systems optimization, credit risk management, theoretical finance, portfolio management, leveraged finance, corporate finance, market finance, international finance, human+machine learning, financial technology.</p>
+                    </td>
+                    <td>
+                        <img style="height:300px" src="data:image/jpeg;base64,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" alt="Mohamed Desoky">
+                    </td>
+                </tr>
+    
+            </table>
+
+        <section >
+            <h2 style="font-family: 'Georgia', serif;">
+                “Every great dream begins with a dreamer. Always remember, you have within you the strength, the patience, and the passion to reach for the stars, to change the world.”
+                ― Harriet Tubman 
+            </h2>
+            
+        </section>  
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mohamed Desoky. All Rights Reserved.</p>
+        <p><a href="https://www.linkedin.com/in/mohameddesoky/" target="_blank">LinkedIn</a></p>
+        <p><a href="https://www.facebook.com/desokycapital/" target="_blank">Facebook</a></p>
+    </footer>
+
+</body>
+</html>

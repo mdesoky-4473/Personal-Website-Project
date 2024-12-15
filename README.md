@@ -4,7 +4,7 @@ Welcome to my personal website! This site serves as a platform to showcase my pr
 Features:
 About Me: Learn about my professional background, skills, and interests.
 Portfolio: A collection of projects I've worked on, including detailed descriptions and links to live demos or repositories.
-  -Curated investment products
+  -Curated investment products, including a momentum-based ETF
   -Real estate investments
   -Private capital investments
   -GitHub projects

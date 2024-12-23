@@ -1,0 +1,151 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: cornsilk;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3 {
+  margin: 0px;
+}
+
+/* Main Content Styling */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: navy;
+  color: cornsilk;
+  padding: 20px;
+}
+
+  
+nav ul {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Display list items in a row */
+  gap: 15px; /* Add spacing between items */
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation Styling */
+header nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+header nav ul li a:hover {
+  color: darkblue;
+}
+
+footer a {
+  color: whitesmoke; 
+  text-decoration: none; /* Removes underline */
+}
+
+header,footer {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Align items with space between */
+  align-items: center; /* Vertically center items */
+  padding: 0px;
+  background-color: darkslategray;
+  font-family: 'Arial', sans-serif;
+  color: whitesmoke;
+}
+
+article {
+    display: grid;
+    grid-template:
+      "one one one" auto
+      "one one one" auto
+      "one one one" auto;
+    gap: .5rem;
+    align-items: stretch;
+    max-width: 1200px;
+    height: 100%;
+  }
+  
+  .grid_header_one {
+    grid-area: one;
+  }
+  
+ 
+  section {
+    border: solid cornsilk 5px;
+    border-radius: 0px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90%;
+  }
+
+  .contact_heading {
+    text-align: left; /* Align the heading to the left */
+    margin-bottom: 20px;
+    font-size: 30px; /* Add spacing between heading and form */
+}
+
+  .contact_form {
+    width: 50%; /* Extend the form width */
+    max-width: 600px; /* Optional: limit max width */
+    margin: 0 auto; /* Center the form horizontally */
+    display: flex;
+    flex-direction: column; /* Stack labels and inputs */
+    gap: 15px; /* Add space between form elements */
+}
+
+label,
+  .submit_btn {
+    display: block;
+    margin-top: 12px;
+  }
+
+.submit_btn:hover {
+    background-color: gray;
+}
+  
+.footer_color {
+    background-color: navy !important;
+}
+
+
+/* Tablet Styles */
+@media (max-width: 768px) {
+  article {
+    grid-template:
+      "one one" auto
+      "one one" auto
+      "one one" auto
+      "one one" auto;
+      gap: 0.5rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 320px) {
+  article {
+    grid-template:
+      "one" auto
+      "one" auto
+      "one" auto
+      "one" auto
+      "one" auto;
+      gap: 0.25rem;
+  }
+  
+  section {
+      padding: 8px;
+      border-radius: 4px;
+  }
+
+}

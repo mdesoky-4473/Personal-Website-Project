@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -5,7 +9,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background-color: cornsilk;
+  background: linear-gradient(to bottom, navy, cornsilk);
+  /* background-color: cornsilk; */
   min-height: 100vh;
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -21,7 +26,6 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  background-color: navy;
   color: cornsilk;
   padding: 20px;
 }
@@ -55,7 +59,7 @@ header,footer {
   display: flex; /* Use flexbox for layout */
   justify-content: space-between; /* Align items with space between */
   align-items: center; /* Vertically center items */
-  padding: 0px;
+  padding: 5px 10px;
   background-color: darkslategray;
   font-family: 'Arial', sans-serif;
   color: whitesmoke;
@@ -87,6 +91,7 @@ article {
     align-items: center;
     justify-content: space-evenly;
     height: 90%;
+    border-radius: 15px;
   }
 
   .contact_heading {
@@ -96,12 +101,14 @@ article {
 }
 
   .contact_form {
-    width: 50%; /* Extend the form width */
-    max-width: 600px; /* Optional: limit max width */
-    margin: 0 auto; /* Center the form horizontally */
+    width: calc(100% - 40px); 
+    max-width: 400px;  
     display: flex;
+    z-index: 10;
     flex-direction: column; /* Stack labels and inputs */
-    gap: 15px; /* Add space between form elements */
+    gap: 15px;
+    padding: 20px; 
+    margin: 0 auto; /* Centers the form */
 }
 
 label,
@@ -112,6 +119,7 @@ label,
 
 .submit_btn:hover {
     background-color: gray;
+    transform: scale(1.05); 
 }
   
 .footer_color {
